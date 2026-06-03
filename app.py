@@ -56,7 +56,7 @@ def init_db():
     # بيانات افتراضية
     try:
         conn.execute("INSERT INTO users (name,username,password,role,status) VALUES (?,?,?,?,?)",
-                     ("Munif Hejab","munif","admin123","admin","online"))
+                     ("Munif Hejab","munif","munif@2026","admin","online"))
         conn.execute("INSERT INTO users (name,username,password,role) VALUES (?,?,?,?)",
                      ("Ahmed Khalid","ahmed","user123","user"))
         # خدمات افتراضية
